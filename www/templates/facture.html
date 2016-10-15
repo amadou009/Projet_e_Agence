@@ -1,0 +1,39 @@
+
+<ion-view view-title="Facture">
+ 
+  <ion-content class="CouleurDeFond" id="facture">
+
+	<div class="conteneur" style="background-color:#fff; margin-left:15px; margin-right:15px; margin-top:50px">
+
+		<div class="reclamations list">
+
+	     <p style="color:#FA9D4E; font-size:20px"> VISUALISATION </p>
+	     <p style="color:#878787; font-size:20px"> <b>DERNIERE FACTURE </b> </p>
+	     
+	     <p style="color:#878787;">
+	     	Pour visualiser votre dernière facture, veuillez remplir le formulaire ci dessous.
+	     </p>
+
+		  <label class="item item-input item-stacked-label" id="FactureLabelReferenceClient">
+		    <span class="input-label">Référence client :</span>
+		    <input type="text" id="FactureReferenceClient" ng-model="DerniereFacture.referenceClient" ng-init="DerniereFacture.referenceClient=''">
+		  </label>
+
+			<button id="validerDerniereFacture"
+	          ng-click="VisualiserDerniereFacture(DerniereFacture)">Valider
+	        </button>
+
+		</div>
+
+	</div>
+
+  <script id="image-modal.html" type="text/ng-template">
+      <div class="modal image-modal transparent" ng-click="closeModal()">
+          <ion-pane class="transparent">
+             <img ng-src="{{imageSrc}}" class="fullscreen-image"/>
+          </ion-pane>
+      </div>
+  </script>
+
+  </ion-content>
+</ion-view>

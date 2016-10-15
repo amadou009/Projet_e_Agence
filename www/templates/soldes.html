@@ -1,0 +1,29 @@
+<ion-view view-title="Solde">
+  <ion-content class="CouleurDeFond" id="solde">
+
+	<div class="conteneur" style="background-color:#fff; margin-left:15px; margin-right:15px; margin-top:50px">
+
+		<div class="soldes list">
+
+	     <p style="color:#FA9D4E; font-size:20px"> VISUALISATION </p>
+	     <p style="color:#878787; font-size:20px"> <b>SOLDE ACTUEL </b> </p>
+	     
+	     <p style="color:#878787;">
+	     	Pour visualiser votre solde actuel, veuillez remplir le formulaire ci dessous.
+	     </p>
+
+		  <label class="item item-input item-stacked-label" id="SoldeLabelReferenceClient">
+		    <span class="input-label">Référence client :</span>
+		    <input type="text" id="SoldeReferenceClient" ng-model="DataSolde.referenceClient" ng-init="DataSolde.referenceClient=''">
+		  </label>
+
+			<button id="validerSoldeActuel"
+	          ng-click="VisualiserSoldeActuel(DataSolde)">Valider
+	        </button>
+		
+		</div>
+
+	</div>
+
+  </ion-content>
+</ion-view>

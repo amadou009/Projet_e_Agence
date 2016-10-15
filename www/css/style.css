@@ -1,0 +1,472 @@
+
+/* 
+   Cette 1ere partie du CSS est adapté au écran 
+   dont le height = 568px et le width = 320px 
+   Par exemple, un iPhone 5 et 5s en mode portrait 
+*/
+
+/* ************************ */
+/* Couleur d'entete de page */
+/* ************************ */
+.bar-header-titre {
+  height: 120px !important;
+  background: url("../img/entete_accueil.png") no-repeat center !important;
+  background-size: cover !important;
+}
+
+/*.bar .bar-assertive{
+	background-image : url("../image/barre.png");
+}*/
+
+.bar-stable, .bar { 
+	background-color:  #13B454 ;
+	background-image:  url("../img/barre.png");
+	background-repeat: repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	position: absolute;
+}
+
+.view-title, .title, .header-item, .button-icon {
+ 	color:  white !important;
+}
+
+/* *************************************************************** */
+/* On modifie le fond de page de toutes les pages de l'application */
+/* *************************************************************** */
+
+.CouleurDeFond{
+	background:url("../img/bg.png") no-repeat top center !important;  
+	background-size: cover !important;
+	background-height:auto;
+}
+
+/* **************** */
+/* Page des Modules */
+/* **************** */
+
+.services, .reclamations, .detailSolde, .soldes, .dernierSolde {
+
+    background-color:transparent;
+    color:black;
+
+    padding-top:8px;
+    padding-left:5px;
+
+    margin-left:15px;
+    margin-right:15px;
+}
+
+#firstService, .reclamations{
+	margin-top: 15px;
+	padding-top:20px;
+}
+
+#endService{
+	margin-bottom: 30px;
+	padding-bottom:30px !important;
+}
+
+.left{
+  float:left;
+  padding-top: 7px;
+}
+
+.ligneHorizontale{
+	margin-top:15px;
+}
+
+#imgSuiviDemande{
+	width:13%;
+	margin-left: 92px;
+}
+
+
+#imgSimulerFacture{
+	width:13%;
+	margin-left: 84px;
+}
+
+
+#imgSimulerConso{
+	width:13%;
+	margin-left: 35px;
+}
+
+
+#imgReclamation{
+	width:13%;
+	margin-left: 142px;
+}
+
+#imgDerniereFacture{
+	width:13%;
+	margin-left: 115px;
+}
+
+#imgSoldeActuel{
+	width:13%;
+	margin-left: 140px;
+}
+
+/* ********************* */
+/* Page des Réclamations */
+/* ********************* */
+
+.zoneDeTexte, .item-select select#categorie{
+	background-color: #F2F2F2;
+	margin-bottom: 15px;
+}
+
+.item-select select#categorie{
+	padding-right: 28px;
+	padding-left: 0px;
+	height: 30px;
+	max-width: 69% !important;
+}
+
+.zoneDeTexte textarea{
+	background-color: #F2F2F2;
+}
+
+#lblCategorieReclamation{
+	height: 30px !important;
+}
+
+#lblCategorieReclamation .input-label{
+	color: gray;
+}
+
+.zoneDeTexte input{
+	padding: 0px !important;
+    height: 20px !important;
+}
+
+.zoneDeTexte.item-input{
+	padding: 6px 0 5px 7px !important;
+}
+
+button.annulerReclamation{
+	border-radius: 15px;
+	color:#808080;
+	background-color:transparent;
+	border: 2px solid #808080;
+	height: 30px;
+	margin-bottom: 30px !important;
+	margin-left: 60px;
+}
+
+button.soumettreReclamation{
+	float:right;
+	color:#F78F25;
+	background-color:transparent;
+	border-radius: 15px;
+	border: 2px solid #F78F25;
+	height: 30px;
+	margin-bottom: 30px !important;
+}
+
+.lectureSeule{
+	background-color: #F2F2F2 !important;
+}
+
+/* ************************************* */
+/* Page dernière Facture et solde actuel */
+/* ************************************* */
+
+#FactureReferenceClient, #SoldeReferenceClient{
+	background-color: #F2F2F2;
+	padding-left: 10px;
+}
+
+#FactureLabelReferenceClient, #SoldeLabelReferenceClient{
+	border-style: none;
+	padding: 0px; 
+	margin-bottom: 20px;
+}
+
+#validerDerniereFacture, #validerSoldeActuel{
+
+	color:#FFF;
+	background-color:#F78F25;
+	border-radius: 15px;
+	border: 2px solid #F78F25;
+	height: 30px;
+	
+	padding-left:25px; 
+	padding-right:25px; 
+	
+	margin-bottom: 30px !important;
+	font-weight: bold;
+	margin-left: 80px;
+
+}
+
+/* ************** */
+/* Page d'acceuil */
+/* ************** */
+
+#conteneurAcceuil{
+  margin-top:50px;
+}
+
+#imageCie, #imageEAU{
+  height:35vh !important; 
+  width: 91vw !important;
+}
+
+#conteneurCIE, #conteneurEAU{
+  height:35vh !important; 
+  width: 91vw !important;
+}
+
+#conteneurCIE, #conteneurEAU{
+  margin-top: 20px;
+  margin-left: 18px;
+}
+
+/* ************************ */
+/* Page détail Solde actuel */
+/* ************************ */
+
+.ligneHorizontaleDetailSolde{
+	margin-top:8px;
+	margin-bottom: 15px;
+}
+
+.detailSoldeLabelReferenceClient {
+    border-style: none;
+}
+
+.detailSoldeLabelReferenceClient span{
+	color: gray;
+}
+
+.detailSoldeLabelReferenceClient.item-input{
+	padding: 5px 0 0px 0px ;
+}
+
+.lectureSeuleSolde{
+	background-color: #FFF !important;
+}
+
+#labelSoldeActuel{
+	margin-bottom: 20px;
+}
+
+/* ****************************** */
+/* Gérer l'affichage des factures */
+/* ****************************** */
+
+.transparent {
+  background: transparent !important;
+}
+
+.image-modal {
+  width: 100% !important;
+  height: 100%;
+  top: 0 !important;
+  left: 0 !important;
+}
+
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 679px) {
+  .active .modal-backdrop-bg {
+    opacity: .5;
+  }
+  .modal-backdrop-bg {
+    -webkit-transition: opacity 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
+    background-color: #000;
+    opacity: 0;
+  }
+}
+
+/* Cas d'un iPhone 6 et 6s : Portrait */
+@media screen and (height: 667px) and (width: 375px){
+
+	/* **************** */
+	/* Page des Modules */
+	/* **************** */
+
+	.left span{
+	  font-size: 19px;
+	}	
+  
+	#imgSuiviDemande{
+		margin-left: 97px;
+	}
+
+	#imgSimulerFacture{
+		margin-left: 89px;
+	}
+
+	#imgSimulerConso{
+		margin-left: 21px;
+	}
+
+	#imgReclamation{
+		margin-left: 163px;
+	}
+
+	#imgDerniereFacture{
+		margin-left: 130px;
+	}
+
+	#imgSoldeActuel{
+		margin-left: 164px;
+	}
+
+	/* ********************* */
+	/* Page des Réclamations */
+	/* ********************* */
+
+	button.annulerReclamation {
+	    margin-left: 120px;
+	}
+
+	.zoneDeTexte textarea{
+	    height: 210px;
+	}
+
+	/* ************************************* */
+	/* Page dernière Facture et solde actuel */
+	/* ************************************* */
+
+	#validerDerniereFacture, #validerSoldeActuel {
+	    margin-left: 110px;
+	}
+}
+
+/* Cas d'un iPhone 6 Plus et 6s Plus : Portrait */
+@media screen and (height: 736px) and (width: 414px){
+
+	/* **************** */
+	/* Page des Modules */
+	/* **************** */
+
+	.left span{
+	  font-size: 21px;
+	}	
+  
+	#imgSuiviDemande{
+		margin-left: 114px;
+	}
+
+	#imgSimulerFacture{
+		margin-left: 105px;
+	}
+
+	#imgSimulerConso{
+		margin-left: 30px;
+	}
+
+	#imgReclamation{
+		margin-left: 187px;
+	}
+
+	#imgDerniereFacture{
+		margin-left: 152px;
+	}
+
+	#imgSoldeActuel{
+		margin-left: 185px;
+	}
+
+	/* ********************* */
+	/* Page des Réclamations */
+	/* ********************* */
+
+	button.annulerReclamation {
+	    margin-left: 160px;
+	}
+
+	.zoneDeTexte textarea{
+	    height: 280px;
+	}
+
+	/* ************************************* */
+	/* Page dernière Facture et solde actuel */
+	/* ************************************* */
+
+	#validerDerniereFacture, #validerSoldeActuel {
+	    margin-left: 135px;
+	}
+}
+
+/* Cas d'un Android 360 * 640 : Portrait */
+@media screen and (device-width: 360px) and (device-height: 640px) and (orientation: portrait){
+  
+	/* ************** */
+	/* Page d'acceuil */
+	/* ************** */
+
+	#conteneurAcceuil{
+	  margin-top:70px;
+	}
+
+	/* **************** */
+	/* Page des Modules */
+	/* **************** */
+
+	.left span{
+	  font-size: 19px;
+	}	
+  
+	#imgSuiviDemande{
+		margin-left: 84px;
+	}
+
+	#imgSimulerFacture{
+		margin-left: 76px;
+	}
+
+	#imgSimulerConso{
+		margin-left: 8px;
+	}
+
+	#imgReclamation{
+		margin-left: 150px;
+	}
+
+	#imgDerniereFacture{
+		margin-left: 121px;
+	}
+
+	#imgSoldeActuel{
+		margin-left: 151px;
+	}
+
+	/* ********************* */
+	/* Page des Réclamations */
+	/* ********************* */
+
+	button.annulerReclamation {
+	    margin-left: 137px;
+	}
+
+	.zoneDeTexte textarea{
+	    height: 237px;
+	}
+
+	/* ************************************* */
+	/* Page dernière Facture et solde actuel */
+	/* ************************************* */
+
+	#validerDerniereFacture, #validerSoldeActuel {
+	    margin-left: 96px;
+	}
+}
+

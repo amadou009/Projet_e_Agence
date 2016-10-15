@@ -1,0 +1,57 @@
+<ion-view view-title="Réclamation">
+  <ion-content class="CouleurDeFond" id="reclamation">
+ 
+	<div class="conteneur" style="background-color:#fff; margin-left:15px; margin-right:15px">
+
+		<div class="reclamations">
+
+			<div>
+			    
+	    	  <label class="item item-input zoneDeTexte">
+			    <input type="text" placeholder="Référence Client" ng-model="DataReclamation.referenceClient" ng-init="DataReclamation.referenceClient=''" ng-change="searchClient(DataReclamation.referenceClient)">
+			  </label>
+
+	    	  <label class="item item-input zoneDeTexte">
+			    <input type="text" placeholder="Nom et Prénoms" ng-model="DataReclamation.nomPrenomClient" ng-init="DataReclamation.nomPrenomClient=''" readonly class="lectureSeule">
+			  </label>
+
+  	    	  <label class="item item-input zoneDeTexte">
+			    <input type="text" placeholder="E-mail" ng-model="DataReclamation.emailClient" ng-init="DataReclamation.emailClient=''" readonly class="lectureSeule">
+			  </label>
+
+  	    	  <label class="item item-input zoneDeTexte">
+			    <input type="text" class="lectureSeule" placeholder="Contact" ng-model="DataReclamation.contactClient" ng-init="DataReclamation.contactClient=''" readonly>
+			  </label>
+
+			  <label class="item item-input item-select zoneDeTexte" id="lblCategorieReclamation">
+			   
+			     <div class="input-label">Catégorie</div>
+			    
+			      <select ng-model="DataReclamation.categorie" ng-init="DataReclamation.categorie=''" id="categorie">
+			         <option ng-repeat="reclamation in reclamations | orderBy: '+name'" ng-value="reclamation.name">{{reclamation.name}}</option>
+			      </select>
+			    
+			  </label>
+
+  	    	  <label class="item item-input zoneDeTexte">
+  	    	  	<!-- <i class="icon ion-android-create" id="test"></i>  --><!-- 
+                <span class="input-label">Objet</span> -->
+  	    	  	 <textarea rows="7" cols="50" placeholder="Le contenu de votre réclamation" ng-model="DataReclamation.objet" ng-init="DataReclamation.objet=''"></textarea>
+			  </label>
+
+ 			  <button class="soumettreReclamation"
+                ng-click="soumettreReclamation(DataReclamation)">Soumettre
+              </button>
+
+              <button class="annulerReclamation"
+               ng-click="annulerReclamation()">Annuler
+              </button>
+
+		    </div>
+		
+		</div>
+
+	</div>
+
+  </ion-content>
+</ion-view>

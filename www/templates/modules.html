@@ -1,0 +1,94 @@
+<ion-view view-title="ESPACE {{ServiceEnCours}}">
+	
+ <ion-content class="CouleurDeFond" id="modules">
+
+	<div class="conteneur" style="background-color:#fff; margin-left:15px; margin-right:15px">
+
+		<div class="services" id="firstService">
+
+			<div class="left" ng-click="ServiceIndisponible()">
+			      <span>Suivi des demandes</span>
+		    </div>
+		
+		    <div class="right" ng-click="ServiceIndisponible()">
+		    	<img src="img/btn_suivant.png" id="imgSuiviDemande"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+		</div>
+
+		<div class="services">
+
+			<div class="left" ng-click="ServiceIndisponible()">
+			      <span ng-click="ServiceIndisponible()">Simulation de facture </span>
+		    </div>
+
+		    <div class="right" ng-click="ServiceIndisponible()">
+		    	<img src="img/btn_suivant.png" id="imgSimulerFacture"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+
+		</div>
+
+		<div class="services">
+			
+			<div class="left" ng-click="ServiceIndisponible()">
+				<span>Simulation de consommation </span>
+		    </div>
+
+		    <div class="right" ng-click="ServiceIndisponible()">
+		    	<img src="img/btn_suivant.png" id="imgSimulerConso"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+
+		</div>
+
+		<div class="services">
+
+			<div class="left" ng-click="goToServiceReclamation()" ng-controller="reclamationCtrl">
+				<span>Réclamation</span>
+		    </div>
+
+		    <div class="right" ng-click="goToServiceReclamation()" ng-controller="reclamationCtrl">
+		    	<img src="img/btn_suivant.png" id="imgReclamation"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+
+		</div>
+
+		<div class="services">
+
+			<div class="left" ng-click="goToServiceDerniereFacture()" ng-controller="factureCtrl">
+				<span>Dernière facture</span>
+		    </div>
+
+		    <div class="right" ng-click="goToServiceDerniereFacture()" ng-controller="factureCtrl">
+		    	<img src="img/btn_suivant.png" id="imgDerniereFacture"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+
+		</div>
+
+		<div class="services" id="endService">
+			
+			<div class="left" ng-click="goToServiceSoldeActuel()" ng-controller="soldeCrtl">
+				<span>Solde actuel </span>
+		    </div>
+
+		    <div class="right" ng-click="goToServiceSoldeActuel()" ng-controller="soldeCrtl">
+		    	<img src="img/btn_suivant.png" id="imgSoldeActuel"/>
+		    </div>
+
+			<hr class="ligneHorizontale"/> 
+
+		</div>
+
+	</div>
+
+ </ion-content>
+
+</ion-view>

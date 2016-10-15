@@ -1,0 +1,51 @@
+
+<ion-view view-title="Solde Actuel">
+  <ion-content class="CouleurDeFond" id="detail_solde">
+
+	<div class="conteneur" style="background-color:#fff; margin-left:15px; margin-right:15px; margin-top:20px">
+
+		<div class="dernierSolde list">
+
+	     <p style="color:#FA9D4E; font-size:20px"> 
+	     	<b>SOLDE ACTUEL</b> 
+			<hr class="ligneHorizontaleDetailSolde"/> 
+	     </p>
+
+		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient">
+		    <span class="input-label">Référence client :</span>
+		    <input type="text" ng-model="DetailSolde.referenceClient" ng-init="DetailSolde.referenceClient='smile'"  readonly class="lectureSeuleSolde">
+		  </label>
+
+  		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient">
+		    <span class="input-label" >Nom et Prénoms :</span>
+		    <input type="text" ng-model="DetailSolde.nomPrenomClient" ng-init="DetailSolde.nomPrenomClient='SMILE CI (Intégrateur de Solutions Informatiques)'" readonly class="lectureSeuleSolde">
+		  </label>
+
+    	  <!-- <li class="item item-body"> SMILE CI (Intégrateur de Solutions Informatiques) </li> -->
+
+  		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient">
+		    <span class="input-label">Montant dernière facture :</span>
+		    <input type="text" ng-model="DetailSolde.montant" ng-init="DetailSolde.montant='207 690 Fr'" readonly class="lectureSeuleSolde">
+		  </label>
+
+  		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient">
+		    <span class="input-label">Date dernier paiement :</span>
+		    <input type="text" ng-model="DetailSolde.date" ng-init="DetailSolde.date='04.09.2016'" readonly class="lectureSeuleSolde">
+		  </label>
+
+  		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient">
+		    <span class="input-label">Montant dernier paiement :</span>
+		    <input type="text" ng-model="DetailSolde.mdp" ng-init="DetailSolde.mdp='207 690 Fr'" readonly class="lectureSeuleSolde">
+		  </label>
+
+  		  <label class="item item-input item-stacked-label detailSoldeLabelReferenceClient" id="labelSoldeActuel">
+		    <span class="input-label">Solde actuel :</span>
+		    <input type="text" ng-model="DetailSolde.solde" ng-init="DetailSolde.solde='0.00'" readonly class="lectureSeuleSolde">
+		  </label>
+		
+		</div>
+
+	</div>
+
+  </ion-content>
+</ion-view>

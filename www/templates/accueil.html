@@ -1,0 +1,38 @@
+<ion-view>
+				
+	<ion-nav-bar class="nav-title-slide-ios7 bar-header-titre" >
+	    <ion-nav-back-button class="button-icon ion-arrow-left-c">
+	    </ion-nav-back-button>
+	</ion-nav-bar>
+<!-- 
+     <ion-nav-title align-title="center">
+            ACCUEIL
+     </ion-nav-title>   -->
+  
+	<ion-content class="CouleurDeFond" id="conteneurAcceuil" scroll="false">
+	            
+		<div style="position:relative;" id="conteneurCIE" 
+		     ng-click="UpdateServiceSelectionne('CIE')">
+
+		     <a href="#/app/module">
+		        <div style="position:absolute;">
+		            <img id="imageCie" ng-src="img/grpCIE.png">
+		        </div>
+		     </a>
+
+		  </div>
+
+		  <div style="position:relative;" id="conteneurEAU" 
+		     ng-click="UpdateServiceSelectionne('SODECI')">
+
+		     <a href="#/app/module">
+		        <div style="position:absolute;">
+		            <img id="imageEAU" ng-src="img/grpSODECI.png">
+		        </div>
+		     </a>
+
+		  </div>
+		 
+	</ion-content>
+
+</ion-view>
